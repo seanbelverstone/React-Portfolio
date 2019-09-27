@@ -42,7 +42,7 @@ export default class Example extends React.Component {
                 </NavItem>
                 <NavItem>
                     <NavLink>
-                        <Link to="/">
+                        <Link to="/contact">
                             Contact
                         </Link>
                     </NavLink>
