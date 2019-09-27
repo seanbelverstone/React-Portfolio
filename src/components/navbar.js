@@ -1,5 +1,6 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -19,20 +20,45 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+        <Router>
+            <Navbar color="faded" light>
+            <NavbarBrand href="/" className="mr-auto">sean belverstone</NavbarBrand>
+            <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+            <Collapse isOpen={!this.state.collapsed} navbar>
+                <Nav navbar>
+                <NavItem>
+                    <NavLink>
+                        <Link to="/">
+                            Home
+                        </Link>
+                    </NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink>
+                        <Link to="/projects">
+                            Projects
+                        </Link>
+                    </NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink>
+                        <Link to="/">
+                            Contact
+                        </Link>
+                    </NavLink>
+                </NavItem>
+                </Nav>
+            </Collapse>
+            </Navbar>
+
+        {/* Uncomment this when components have been defined */}
+            {/* <Route path="/" exact component={About} />
+            <Route path="/about/" component={Projects} />
+            <Route path="/users/" component={Contact} /> */}
+
+
+
+        </Router>
       </div>
     );
   }
