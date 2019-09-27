@@ -1,5 +1,7 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { BrowserRouter as Link } from "react-router-dom";
+
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -24,15 +26,27 @@ export default class Example extends React.Component {
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
-            <NavItem>
-                <NavLink href="/">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/projects/">Projects</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/contact/">Contact</NavLink>
-              </NavItem>
+                <NavItem>
+                    <NavLink>
+                        <Link to="/">
+                        Home
+                        </Link>
+                    </NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink>
+                        <Link to="/projects">
+                        Projects
+                        </Link>
+                    </NavLink>              
+                </NavItem>
+                <NavItem>
+                    <NavLink>
+                        <Link to="/contact">
+                        Contact
+                        </Link>
+                    </NavLink>              
+                </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
