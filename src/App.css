@@ -1,7 +1,10 @@
 body {
   text-align: center;
   background-image: url("./images/ep_naturalblack.png");
+  padding-bottom: 80px;
 }
+
+/* Navbar */
 
 nav {
   position: fixed;
@@ -17,13 +20,61 @@ nav {
 
 button.mr-2.navbar-toggler {
   background-color: white;
-}
+} 
 
- 
+/* Jumbotron */
 
 .jumbotron-fluid {
   background-image: url("./images/budebackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin-top: 50px;
+  position: relative;
+  padding-bottom: 100px !important;
+}
+
+.lead {
+  font-weight: 500 !important;
+}
+
+/* GitHub, LinkedIn and CV links */
+
+#github {
+  width: 32px;
+  height: auto;
+  position: absolute;
+  left: 90%;
+  bottom: 80%;
+}
+
+#linkedin {
+  width: 32px;
+  height: auto;
+  border-radius: 15px;
+  position: absolute;
+  left: 90%;
+  bottom: 65%;
+}
+
+#cv {
+  color: white;
+  font-size: 14px;
+  padding: 7px;
+  background-color: black;
+  border-radius: 50px;
+  position: absolute;
+  left: 90%;
+  bottom: 50%;
+}
+
+a:hover {
+  transition: 500ms;
+  opacity: 0.5;
+  color: gray;
+}
+
+a:active {
+  opacity: 0.2;
 }
 
 #aboutMeSection {
