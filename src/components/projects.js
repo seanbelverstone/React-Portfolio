@@ -6,10 +6,11 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import fureverHome from "../images/fureverHome";
-import burger from "../images/burger";
-import clicky from "../images/clicky";
-import friendFinder from "../images/friendFinder";
+// All images required for the Carousel
+import fureverHome from "../images/fureverHome.png";
+import burger from "../images/burger.png";
+import clicky from "../images/clicky.png";
+import friendFinder from "../images/friendFinder.png";
 import bamazon from "../images/bamazon.jpg";
 import crystal from "../images/crystalcollector.png";
 import fridgeChef from "../images/fridgechef.png";
@@ -21,66 +22,79 @@ import trivia from "../images/trivia.png";
 
 const items = [
   {
+    id: 1,
     src: fureverHome,
     altText: 'FurEver Home',
     caption: 'Enter Description Here'
   },
   {
+    id: 2,
     src: burger,
     altText: 'Sequelized Burger',
     caption: 'Enter Description Here'
   },
   {
+    id: 3,
     src: clicky,
     altText: 'Halo Themed Clicky Game',
     caption: 'Enter Description Here'
   },
   {
+    id: 4,
     src: friendFinder,
     altText: 'Friend Finder',
     caption: 'Enter Description Here'
   },
   {
+    id: 5,
     src: bamazon,
     altText: 'Bamazon',
     caption: 'Enter Description Here'
   },
   {
+    id: 6,
     src: liri,
     altText: 'LIRI - Node App',
     caption: 'Enter Description Here'
   },
   {
+    id: 7,
     src: fridgeChef,
     altText: 'Fridge Chef',
     caption: 'Enter Description Here'
   },
   {
+    id: 8,
     src: trivia,
     altText: 'Lord of the Rings Trivia',
     caption: 'Enter Description Here'
   },
   {
+    id: 9,
     src: trainTimes,
     altText: 'Train Times',
     caption: 'Enter Description Here'
   },
   {
+    id: 10,
     src: giftastic,
     altText: 'GifTastic',
     caption: 'Enter Description Here'
   },
   {
+    id: 11,
     src: crystal,
     altText: 'Crystal Collector',
     caption: 'Enter Description Here'
   },
   {
+    id: 12,
     src: hangman,
     altText: 'UK Hangman',
     caption: 'Enter Description Here'
   }
 ];
+
 
 class Projects extends Component {
   constructor(props) {
@@ -123,28 +137,33 @@ class Projects extends Component {
 
     const slides = items.map((item) => {
       return (
+
         <CarouselItem
+          className="slide"
+          tag="div"
+          key={item.id}
           onExiting={this.onExiting}
           onExited={this.onExited}
-          key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <img src={item.src} alt={item.altText} className="projectImage"/>
+          <CarouselCaption className="text-white" captionText={item.caption} captionHeader={item.altText} />
         </CarouselItem>
       );
     });
 
     return (
-      <Carousel
-        activeIndex={activeIndex}
-        next={this.next}
-        previous={this.previous}
-      >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-      </Carousel>
+      <div>
+        <Carousel
+          activeIndex={activeIndex}
+          next={this.next}
+          previous={this.previous}
+        >
+          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+          {slides}
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+        </Carousel>
+      </div>
     );
   }
 }
