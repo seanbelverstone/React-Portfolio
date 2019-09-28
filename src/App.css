@@ -13,8 +13,13 @@ nav {
   opacity: 0.8;
 }
 
+.navbar {
+  background-color: rgb(4,5,7);
+}
+
 .navbar-light .navbar-brand, .nav-link {
   color: white !important;
+  width: 20%;
 
 }
 
@@ -43,28 +48,35 @@ button.mr-2.navbar-toggler {
   width: 32px;
   height: auto;
   position: absolute;
-  left: 90%;
-  bottom: 80%;
+  left: 55%;
+  bottom: 103%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 #linkedin {
   width: 32px;
   height: auto;
   border-radius: 15px;
+  border: white solid 2px;
   position: absolute;
-  left: 90%;
-  bottom: 65%;
+  left: 45%;
+  bottom: 103%;
 }
 
 #cv {
   color: white;
+  width: 32px;
   font-size: 14px;
-  padding: 7px;
+  padding: 4px;
   background-color: black;
+  border: white solid 2px;
   border-radius: 50px;
   position: absolute;
-  left: 90%;
-  bottom: 50%;
+  left: 50%;
+  bottom: 103%;
+  text-align: center;
 }
 
 a:hover {
@@ -79,4 +91,20 @@ a:active {
 
 #aboutMeSection {
   color: whitesmoke;
+  width: auto;
+  background-color: rgb(4,5,7);
+  align-content: center;
+  margin: 10px 80px 10px 80px;
+}
+
+#myPhoto {
+  float: left;
+  margin: 20px;
+}
+
+#aboutMeText {
+  text-align: left;
+  padding-top: 30px;
+  font-size: 13pt;
+  padding-right: 20px;
 }

@@ -22,7 +22,7 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">sean belverstone</NavbarBrand>
+          <NavbarBrand href="/" className="mr-auto">Sean Belverstone</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
