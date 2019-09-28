@@ -4,7 +4,13 @@ import Navbar from "./components/navbar";
 import MainSection from "./components/jumbotron";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faUser, faEnvelopeOpenText, faPhone, faCommentAlt } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
+
+library.add(faUser, faEnvelopeOpenText, faPhone, faCommentAlt);
+
+
 
 function App() {
   return (
