@@ -20,6 +20,8 @@ import liri from "../images/liri-node-app.png";
 import trainTimes from "../images/traintimes.png";
 import trivia from "../images/trivia.png";
 
+// Move the description box to the right and the slideshow smaller, and to the left. This will add more to the page
+
 const items = [
   {
     id: 1,
@@ -145,15 +147,22 @@ class Projects extends Component {
           onExiting={this.onExiting}
           onExited={this.onExited}
         >
-          <img src={item.src} alt={item.altText} className="projectImage"/>
-          <CarouselCaption className="text-white" captionText={item.caption} captionHeader={item.altText} />
-        </CarouselItem>
+        <div className='carouselContainer'>
+          <div className='imgContainer'>
+            <img width='100%' src={item.src} alt={item.altText} />
+          </div>
+          <div className='textContainer'>
+            <CarouselCaption captionHeader={item.altText}  captionText={item.caption}  />
+          </div>
+        </div>
+      </CarouselItem>
       );
     });
 
     return (
       <div>
         <Carousel
+          className="projectsCarousel"
           activeIndex={activeIndex}
           next={this.next}
           previous={this.previous}
