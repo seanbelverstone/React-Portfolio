@@ -132,7 +132,7 @@ a:active {
   width: 50%;
 }
 
-.textContainer{
+.textContainer, .githubLink a{
   padding: 1% !important;
   position: relative;
   height: 50%;
@@ -148,10 +148,16 @@ a:active {
   width: 75% !important;
 }
 
-.textContainer p{
-  color: black !important;
+.textContainer p, .githubLink a{
+  color: white !important;
+  font-size: 16px;
 }
 
 .carousel-control-next, .carousel-control-prev {
   width: 4% !important;
+}
+
+.githubLink a {
+  left: 30%;
+  font-style: italic;
 }
