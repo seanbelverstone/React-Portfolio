@@ -124,7 +124,7 @@ a:active {
   display: flex !important;
   flex-direction: row !important;
   align-items: center;
-  margin: 60px 40px 40px 40px;
+  margin: 40px 40px 40px 40px;
 }
 
 .imgContainer{
@@ -160,4 +160,17 @@ a:active {
 .githubLink a {
   left: 30%;
   font-style: italic;
+}
+
+/* Contact */
+
+#form {
+  background-color: rgb(4,5,7);
+  width: 80%;
+  color: white;
+  padding: 20px;
+  border: 2px lightgray solid;
+  border-radius: 20px;
+  margin: 40px 10% 0 10%;
+  float: left;
 }
