@@ -60,9 +60,10 @@ export default class Example extends React.Component {
       text: text
     };
 
-    console.log(data);
+    console.log(data);   
 
-  }
+    }
+  
 
 
   render() {
@@ -114,7 +115,8 @@ export default class Example extends React.Component {
 
       <Button 
         color="primary" 
-        onClick={this.onSubmit}>
+        onClick={this.onSubmit}
+        href="mailto:seanbelverstone@gmail.com?subject=My Message">
         Submit
       </Button>
 
