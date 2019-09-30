@@ -59,6 +59,9 @@ export default class Example extends React.Component {
       telephone: telephone,
       text: text
     };
+
+    console.log(data);   
+
   }
   
 
