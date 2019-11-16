@@ -2,6 +2,7 @@ import React from 'react';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 import { Button, FormGroup, Label, Input} from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import emailjs from "emailjs-com";
 
 
 export default class Example extends React.Component {
