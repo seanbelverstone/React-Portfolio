@@ -2,6 +2,7 @@ import React from 'react';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 import { Button, FormGroup, Label, Input} from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import emailjs from "emailjs-com";
 
 
 export default class Example extends React.Component {
@@ -61,8 +62,15 @@ export default class Example extends React.Component {
     };
 
     console.log(data);   
+    emailjs.send("gmail", "portfolio_template", data, "user_hCtShpO14VJ1zNpxU2xRi")
+      .then(response => {
+        console.log("Success", response.status, response.text);
+      }, (err) => {
+        console.log("Failed", err)
 
-  }
+      });
+
+  };
   
 
 
@@ -115,8 +123,7 @@ export default class Example extends React.Component {
 
       <Button 
         color="primary" 
-        onClick={this.onSubmit}
-        href="mailto:seanbelverstone@gmail.com?subject=My Message">
+        onClick={this.onSubmit}>
         Submit
       </Button>
 
