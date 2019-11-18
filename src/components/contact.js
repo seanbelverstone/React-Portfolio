@@ -136,7 +136,8 @@ export default class Example extends React.Component {
         id="message" 
         placeholder="Write your message here" 
         value={this.state.formControls.text.value} 
-        onChange={this.changeHandler} 
+        onChange={this.changeHandler}
+        ref={c => this.form = c}
         />
 
       </FormGroup>
