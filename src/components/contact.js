@@ -87,9 +87,11 @@ export default class Example extends React.Component {
   showConfirmation = () => {
     this.setState({confirmation: "Success! Message Sent."});
     this.form.reset();
-    this.setState({formControls: { 
-      text: ""}
-    });
+    this.setState({
+      formControls: {
+        text: {
+          value: ""
+        }}});
     setTimeout(() => {
       this.setState({confirmation: ""})
     }, 5000);
