@@ -62,8 +62,15 @@ export default class Example extends React.Component {
     };
 
     console.log(data);   
+    emailjs.send("gmail", "template_XTNH9YvO", data, "user_hCtShpO14VJ1zNpxU2xRi")
+      .then(response => {
+        console.log("Success", response.status, response.text);
+      }, (err) => {
+        console.log("Failed", err)
 
-  }
+      });
+
+  };
   
 
 
