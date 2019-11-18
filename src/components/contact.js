@@ -2,6 +2,7 @@ import React from 'react';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 import { Button, FormGroup, Label, Input} from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Recaptcha from "react-google-invisible-recaptcha";
 import emailjs from "emailjs-com";
 
 
@@ -23,7 +24,8 @@ export default class Example extends React.Component {
         text: {
           value: ""
         }
-			}
+      },
+      confirmation: ""
 		};
 
 		this.changeHandler = this.changeHandler.bind(this);
@@ -48,8 +50,13 @@ export default class Example extends React.Component {
 		});
 	}
 
-	onSubmit() {
-		const name = this.state.formControls.name.value;
+	onSubmit = () => {
+    this.recaptcha.execute();
+  }
+
+  onResolved = () => {
+
+    const name = this.state.formControls.name.value;
 		const email = this.state.formControls.email.value;
     const telephone = this.state.formControls.telephone.value;
     const text = this.state.formControls.text.value;
@@ -70,9 +77,20 @@ export default class Example extends React.Component {
 
       });
 
-  };
-  
+      this.showConfirmation();
 
+  }  
+
+  showConfirmation = () => {
+    this.setState({confirmation: "Success! Message Sent."});
+    this.setState({
+      name: "",
+      email: "",
+      telephone: "",
+      text: ""
+    })
+    
+  }
 
   render() {
     return (
@@ -126,6 +144,13 @@ export default class Example extends React.Component {
         onClick={this.onSubmit}>
         Submit
       </Button>
+      <p id="confirmationMessage">{this.state.confirmation}</p>
+
+      <Recaptcha 
+        ref={ref => this.recaptcha = ref}
+        sitekey={process.env.REACT_APP_RECAPTCHA_SITE_ID}
+        onResolved={this.onResolved}
+        />
 
       </AvForm>
 
