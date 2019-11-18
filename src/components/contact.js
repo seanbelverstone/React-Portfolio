@@ -50,10 +50,12 @@ export default class Example extends React.Component {
 		});
 	}
 
+  // Begins validation of user for recaptcha
 	onSubmit = () => {
     this.recaptcha.execute();
   }
 
+  // If successful, this function runs. It sends an email using emailjs.
   onResolved = () => {
 
     const name = this.state.formControls.name.value;
@@ -81,6 +83,7 @@ export default class Example extends React.Component {
 
   }  
 
+  // Sets the state of a success <p> tag to the following and clears the form.
   showConfirmation = () => {
     this.setState({confirmation: "Success! Message Sent."});
     this.setState({
