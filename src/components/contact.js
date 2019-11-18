@@ -86,14 +86,7 @@ export default class Example extends React.Component {
   // Sets the state of a success <p> tag to the following and clears the form.
   showConfirmation = () => {
     this.setState({confirmation: "Success! Message Sent."});
-    this.setState({
-      formControls: {
-        name: "",
-        email: "",
-        telephone: "",
-        text: ""
-      }
-    })
+    this.form.reset();
     setTimeout(() => {
       this.setState({confirmation: ""})
     }, 5000);
@@ -103,7 +96,7 @@ export default class Example extends React.Component {
 
   render() {
     return (
-      <AvForm id="form" onSubmit={this.handleSubmit}>
+      <AvForm id="form" onSubmit={this.handleSubmit} ref={c => this.form = c}>
         <h2>Contact Form</h2>
         <AvField 
           name="name" 
