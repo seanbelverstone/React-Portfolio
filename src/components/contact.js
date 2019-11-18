@@ -92,6 +92,10 @@ export default class Example extends React.Component {
       telephone: "",
       text: ""
     })
+    setTimeout(() => {
+      this.setState({confirmation: ""})
+    }, 5000);
+
     
   }
 
