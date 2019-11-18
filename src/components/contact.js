@@ -90,9 +90,12 @@ export default class Example extends React.Component {
     this.setState(prevState => ({
       formControls: {
         ...prevState.formControls,
-        text: ""
-      }
-    }));
+          text: {
+            ...prevState.formControls.text,
+            value: ""
+          }
+        }
+      }));
 
     setTimeout(() => {
       this.setState({confirmation: ""})
