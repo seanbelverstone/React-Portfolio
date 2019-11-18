@@ -62,7 +62,7 @@ export default class Example extends React.Component {
     };
 
     console.log(data);   
-    emailjs.send("gmail", "template_XTNH9YvO", data, "user_hCtShpO14VJ1zNpxU2xRi")
+    emailjs.send("gmail", "portfolio_template", data, "user_hCtShpO14VJ1zNpxU2xRi")
       .then(response => {
         console.log("Success", response.status, response.text);
       }, (err) => {
@@ -123,8 +123,7 @@ export default class Example extends React.Component {
 
       <Button 
         color="primary" 
-        onClick={this.onSubmit}
-        href="mailto:seanbelverstone@gmail.com?subject=My Message">
+        onClick={this.onSubmit}>
         Submit
       </Button>
 
