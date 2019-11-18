@@ -87,6 +87,9 @@ export default class Example extends React.Component {
   showConfirmation = () => {
     this.setState({confirmation: "Success! Message Sent."});
     this.form.reset();
+    this.setState({formControls: { 
+      text: ""}
+    });
     setTimeout(() => {
       this.setState({confirmation: ""})
     }, 5000);
@@ -137,7 +140,6 @@ export default class Example extends React.Component {
         placeholder="Write your message here" 
         value={this.state.formControls.text.value} 
         onChange={this.changeHandler}
-        ref={c => this.form = c}
         />
 
       </FormGroup>
