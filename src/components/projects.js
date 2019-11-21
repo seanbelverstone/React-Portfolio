@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from "reactstrap";
-import { items } from "../projectsList";
+import items from "../projectsList";
 
 // Move the description box to the right and the slideshow smaller, and to the left. This will add more to the page
 
