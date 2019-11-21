@@ -1,7 +1,6 @@
 // All images required for the Carousel
 import reelTime from "./images/reelTime.png";
 import fureverHome from "./images/fureverHome.png";
-import burger from "./images/burger.png";
 import clicky from "./images/clicky.png";
 import friendFinder from "./images/friendFinder.png";
 import bamazon from "./images/bamazon.jpg";
@@ -49,7 +48,7 @@ const items = [
 		id: 5,
 		src: bamazon,
 		altText: "Bamazon",
-		caption: "A CLI shopping application much like the famous website with a similar name. Users are able to place orders and deplete stock inventory, all of which is stored on a MYSQL server. The app will also use inquirer (which I LOVE) to guide the user through their experience.",
+		caption: "A CLI shopping application much like the famous website with a similar name. Users are able to place orders and deplete stock inventory, all of which is stored on a MYSQL server. The app also uses inquirer (which I LOVE) to guide the user through their experience.",
 		link: "https://github.com/seanbelverstone/Bamazon",
 		live: "https://github.com/seanbelverstone/Bamazon"
 	},
@@ -57,7 +56,7 @@ const items = [
 		id: 6,
 		src: liri,
 		altText: "LIRI - Node App",
-		caption: "LIRI is much like the iPhone's SIRI, but it uses language interpretation rather than speech! LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies and will work through Node's command line input. This was my first, purely back-end assignment. It opened my eyes to a wider world of programming.",
+		caption: "LIRI is much like the iPhone's SIRI, but it uses language interpretation rather than speech! LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies and will work through Node's command line input. This was my first, purely back-end application. It opened my eyes to a wider world of programming.",
 		link: "https://github.com/seanbelverstone/liri-node-app",
 		live: "https://github.com/seanbelverstone/liri-node-app"
 	},
