@@ -179,6 +179,12 @@ a:active {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #github {
+    left: 70%;
+  }
+  #linkedin {
+    left: 30%;
+  }
   .jumbotron-fluid {
     background-size: cover;
     height: 50%;
