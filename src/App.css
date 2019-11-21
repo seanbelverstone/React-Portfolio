@@ -174,3 +174,34 @@ a:active {
   margin: 40px 10% 80px 10%;
   float: left;
 }
+
+/* Mobile responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .jumbotron-fluid {
+    background-size: cover;
+    height: 50%;
+  }
+  .display-3 {
+    font-size: 40px !important;
+    font-weight: bold !important;
+    text-align: center;
+    text-shadow: white 1px 1px;
+  }
+  .lead {
+    text-align: center;
+    font-size: 24px !important;
+    text-shadow: white 1px 1px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
