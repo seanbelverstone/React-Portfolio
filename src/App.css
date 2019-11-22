@@ -231,3 +231,26 @@ a:active {
     text-shadow: white 1px 1px;
   }
 }
+
+@media only screen and (max-width: 950px) {
+  .jumbotron-fluid {
+    background-size: cover;
+  }
+  .display-3 {
+    font-weight: 400 !important;
+    text-shadow: white 1px 1px;
+  }
+  .lead {
+    font-size: 25px !important;
+    text-shadow: white 1px 1px;
+
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .lead {
+    font-size: 25px !important;
+    text-shadow: white 1px 1px;
+    font-weight: 700 !important;
+  }
+}
