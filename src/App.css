@@ -158,7 +158,7 @@ a:active {
 }
 
 .githubLink a {
-  left: 23%;
+  left: 38%;
   font-style: italic;
 }
 
@@ -217,6 +217,7 @@ a:active {
 
 /* Small devices (portrait tablets and large phones, up to 768px) */
 @media only screen and (max-width: 768px) {
+  /* Main Page */
   .jumbotron-fluid {
     background-size: cover;
   }
@@ -229,6 +230,34 @@ a:active {
     text-align: center;
     font-size: 30px !important;
     text-shadow: white 1px 1px;
+  }
+
+  /* Projects Page */
+  .carouselContainer {
+    flex-direction: column !important;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .carousel-caption {
+    font-size: 5px;
+    height: auto;
+  }
+  .carousel-caption.d-none {
+    display: block !important;
+  }
+  .textContainer {
+    width: 100%;
+  }
+  .githubLink a {
+    left: 5%;
+    padding-right: 5px !important;
+  }
+  #gitLink {
+    float: left;
+  }
+  #liveLink {
+    float: right;
   }
 }
 
