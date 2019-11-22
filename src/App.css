@@ -158,7 +158,7 @@ a:active {
 }
 
 .githubLink a {
-  left: 23%;
+  left: 38%;
   font-style: italic;
 }
 
@@ -215,12 +215,78 @@ a:active {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, up to 768px) */
+@media only screen and (max-width: 768px) {
+  /* Main Page */
+  .jumbotron-fluid {
+    background-size: cover;
+  }
+  .display-3 {
+    text-shadow: white 1px 1px;
+    font-weight: bold !important;
+    text-align: center;
+  }
+  .lead {
+    text-align: center;
+    font-size: 30px !important;
+    text-shadow: white 1px 1px;
+  }
 
+  /* Projects Page */
+  .carouselContainer {
+    flex-direction: column !important;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .carousel-caption {
+    font-size: 5px;
+    height: auto;
+  }
+  .carousel-caption.d-none {
+    display: block !important;
+  }
+  .textContainer {
+    width: 100%;
+  }
+  .githubLink a {
+    left: 5% !important;
+    padding-right: 5px !important;
+    text-align: center;
+  }
+  #gitLink {
+    float: left;
+  }
+  #liveLink {
+    float: right;
+  }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 950px) {
+  .jumbotron-fluid {
+    background-size: cover;
+  }
+  .display-3 {
+    font-weight: 400 !important;
+    text-shadow: white 1px 1px;
+  }
+  .lead {
+    font-size: 25px !important;
+    text-shadow: white 1px 1px;
 
+  }
+  .githubLink a {
+    left: 18%;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .lead {
+    font-size: 25px !important;
+    text-shadow: white 1px 1px;
+    font-weight: 700 !important;
+  }
+  .githubLink a {
+    left: 27%;
+  }
 }

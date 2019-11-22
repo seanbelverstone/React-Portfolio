@@ -73,8 +73,8 @@ class Projects extends Component {
           <div className="textContainer">
             <CarouselCaption captionHeader={item.altText}  captionText={item.caption} />
             <div className="githubLink">
-              <a href={item.link}>Click here to view the code on GitHub</a>
-              <a href={item.live}>Or click here to see a live version</a>
+              <a href={item.link} id="gitLink">Code on GitHub</a>
+              <a href={item.live} id="liveLink">Live Application</a>
             </div>
           </div>
         </div>
