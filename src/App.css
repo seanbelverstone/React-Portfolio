@@ -250,8 +250,9 @@ a:active {
     width: 100%;
   }
   .githubLink a {
-    left: 5%;
+    left: 5% !important;
     padding-right: 5px !important;
+    text-align: center;
   }
   #gitLink {
     float: left;
@@ -274,6 +275,9 @@ a:active {
     text-shadow: white 1px 1px;
 
   }
+  .githubLink a {
+    left: 18%;
+  }
 }
 
 @media only screen and (max-width: 1350px) {
@@ -281,5 +285,8 @@ a:active {
     font-size: 25px !important;
     text-shadow: white 1px 1px;
     font-weight: 700 !important;
+  }
+  .githubLink a {
+    left: 27%;
   }
 }
