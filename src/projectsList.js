@@ -16,7 +16,7 @@ const items = [
 		id: 1,
 		src: reelTime,
 		altText: "Reel Time",
-		caption: "Reel Time is my final graduation project. Utilising a combination of React, Sequelize and Express, and built in a group of 4, this project is a culmination of everything we had learnt on over the previous 6 months. My role in the group was to focus on the back-end, including routing, server setup and database management. I am extremely proud with this application.",
+		caption: "Reel Time is my final graduation project. Utilising a combination of React, Sequelize and Express, and built in a group of 4, this project is a culmination of everything we had learnt on over the previous 6 months. My role in the group was to focus on the back-end, including routing, server setup and database management.",
 		link: "https://github.com/seanbelverstone/Reel-Time",
 		live: "https://sean-belverstone-portfolio.herokuapp.com/"
 	},

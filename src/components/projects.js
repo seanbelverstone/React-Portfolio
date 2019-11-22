@@ -89,6 +89,7 @@ class Projects extends Component {
           activeIndex={activeIndex}
           next={this.next}
           previous={this.previous}
+          interval="10000"
         >
           <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
           {slides}
