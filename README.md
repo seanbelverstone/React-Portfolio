@@ -2,6 +2,8 @@
 
 Created using [React](https://reactjs.org/) and styled using components from [Reactstrap](https://reactstrap.github.io/).
 
+A webpage that demonstrates many of my best projects, has a short description about myself, and a fully functional message form. 
+
 My portfolio uses the following libraries:
 
 - React
