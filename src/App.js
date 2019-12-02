@@ -12,7 +12,7 @@ import './App.css';
 library.add(faUser, faEnvelopeOpenText, faPhone, faCommentAlt);
 
 ReactGA.initialize(153622944);
-ReactGA.pageview('/');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 function App() {
