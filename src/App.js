@@ -11,14 +11,11 @@ import './App.css';
 
 library.add(faUser, faEnvelopeOpenText, faPhone, faCommentAlt);
 
-function initializeReactGA() {
-  ReactGA.initialize(153622944);
-  ReactGA.pageview('/');
-}
+ReactGA.initialize(153622944);
+ReactGA.pageview('/');
+
 
 function App() {
-
-  initializeReactGA();
 
   return (
     <Router>
