@@ -13,11 +13,14 @@ library.add(faUser, faEnvelopeOpenText, faPhone, faCommentAlt);
 
 function initializeReactGA() {
   ReactGA.initialize(process.env.GOOGLE_ANALYTICS_ID);
+  console.log(process.env.GOOGLE_ANALYTICS_ID);
   ReactGA.pageview('/');
 }
 
 function App() {
 
+  initializeReactGA();
+  
   return (
     <Router>
 
