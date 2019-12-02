@@ -11,7 +11,7 @@ import './App.css';
 
 library.add(faUser, faEnvelopeOpenText, faPhone, faCommentAlt);
 
-ReactGA.initialize(153622944);
+ReactGA.initialize("UA-153622944-1");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 
