@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import ReactGA from 'react-ga';
 import Navbar from "./components/navbar";
 import MainSection from "./components/jumbotron";
 import Projects from "./components/projects";
@@ -10,9 +11,16 @@ import './App.css';
 
 library.add(faUser, faEnvelopeOpenText, faPhone, faCommentAlt);
 
+function initializeReactGA() {
+  ReactGA.initialize(process.env.GOOGLE_ANALYTICS_ID);
+  console.log(process.env.GOOGLE_ANALYTICS_ID);
+  ReactGA.pageview('/');
+}
 
 function App() {
 
+  initializeReactGA();
+  
   return (
     <Router>
 
