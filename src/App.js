@@ -12,15 +12,14 @@ import './App.css';
 library.add(faUser, faEnvelopeOpenText, faPhone, faCommentAlt);
 
 function initializeReactGA() {
-  ReactGA.initialize(process.env.GOOGLE_ANALYTICS_ID);
-  console.log(process.env.GOOGLE_ANALYTICS_ID);
+  ReactGA.initialize(153622944);
   ReactGA.pageview('/');
 }
 
 function App() {
 
   initializeReactGA();
-  
+
   return (
     <Router>
 
