@@ -1,5 +1,6 @@
 // All images required for the Carousel
 import reelTime from "./images/reelTime.png";
+import googleBooks from "./images/googlebooks.png";
 import fureverHome from "./images/fureverHome.png";
 import clicky from "./images/clicky.png";
 import friendFinder from "./images/friendFinder.png";
@@ -22,11 +23,11 @@ const items = [
 	},
 	{
 		id: 2,
-		src: fureverHome,
+		src: googleBooks,
 		altText: "Google Books",
-		caption: "I was lucky enough to work with the same group people as I did during 'Fridge Chef' and we grew even further as an adaptable team. We had the option to build the app in React, which we took upon ourselves to attempt. We are happy with the result but do believe that it requires further editing to reach its full potential. The idea for this app was birthed through a strong passion for helping animals and their adoption, as too many are forgotten in shelters. Please adopt!",
-		link: "https://github.com/seanbelverstone/FurEver-Home",
-		live: "https://furever-home-app.herokuapp.com/"
+		caption: "This is an app that allows a user to search for books using the Google Books API. Each book populated features the title, authors, an image and a summary for the user to view. By utilizing the Mongoose library, the user has the choice to save the book to a Mongo database, and then remove it later if they wish, from the Saved Books page.",
+		link: "https://github.com/seanbelverstone/Google-Books",
+		live: "https://google-books-mongoose.herokuapp.com/"
 	},
 	{
 		id: 3,
